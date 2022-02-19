@@ -1,9 +1,3 @@
-// let a = document.getElementById('a').value;
-// let a = parseInt(document.getElementById('a').value);
-// let b = document.getElementById('b').value;
-// let b = parseInt(document.getElementById('b').value);
-// let c = document.getElementById('c').value;
-// let c = parseInt(document.getElementById('c').value);
 const resultBefore = document.querySelector('.before');
 const resultAfter = document.querySelector('.after');
 const resultArea = document.querySelector('.area');
@@ -18,7 +12,6 @@ const calculateArea = function () {
   let c = parseInt(document.getElementById('c').value);
   s = (a + b + c) / 2;
   let area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
-  // console.log(area);
   return area;
 };
 
