@@ -10,6 +10,7 @@ const resultArea = document.querySelector('.area');
 const areaSemiPer = document.querySelector('.semi-perimeter');
 const btn = document.querySelector('button');
 let s = 0;
+resultAfter.style.position = 'absolute';
 
 const calculateArea = function () {
   let a = parseInt(document.getElementById('a').value);
@@ -23,6 +24,8 @@ const calculateArea = function () {
 
 const printResult = function () {
   resultBefore.style.display = 'none';
+  resultAfter.style.position = 'static';
+
   resultAfter.classList.add('transition');
 
   resultArea.innerHTML = `Area = ${calculateArea()}`;

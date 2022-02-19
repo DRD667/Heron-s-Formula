@@ -11,9 +11,20 @@ body {
   font-size: 32px;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
 .logo {
   text-align: center;
   font-size: 48px;
+}
+
+.result {
+  border: none;
 }
 
 .result .before,
@@ -22,23 +33,20 @@ body {
   gap: 2rem;
   justify-content: center;
   flex-direction: column;
-  height: 50vh;
 }
 
 .input {
   background-color: white;
   padding: 0.5em 1em 0.5em;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  width: 100vw;
   color: black;
   border-radius: 40px 40px 0 0;
+  margin-top: auto;
 }
 
 .input div {
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
   align-items: center;
   margin: 1em 0;
 }
@@ -70,6 +78,7 @@ button {
   text-align: center;
   transform: translateX(-100%);
   transition: transform 0.25s ease-in-out;
+  margin-top: 1em;
 }
 
 .after.transition {
